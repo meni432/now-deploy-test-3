@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_HOST = "https://tourist-search-2.now.sh";
+const API_HOST = "https://tourist-search-meni.now.sh";
 
 const getUrl = endpoint => API_HOST + endpoint;
 
