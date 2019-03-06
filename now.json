@@ -8,8 +8,8 @@
     { "src": "apiServer/apiServer.js", "use": "@now/node" }
   ],
   "routes": [
-    { "src": "/routing/(.*)", "dest": "apiServer/routing/$1" },
-    { "src": "/db/(.*)", "dest": "apiServer/db/$1" },
+    { "src": "/routing/(.*)", "dest": "apiServer/apiServer.js" },
+    { "src": "/db/(.*)", "dest": "apiServer/apiServer.js" },
     { "src": "/(.*)", "dest": "$1" }
   ],
   "name": "now-deploy-test"
