@@ -1,12 +1,12 @@
 import axios from "axios";
 
-const API_HOST = "https://tourist-search.now.sh";
+const API_HOST = "https://tourist-search-2.now.sh";
 
 const getUrl = endpoint => API_HOST + endpoint;
 
 export const post = async (endpoint, data) => {
   // const url = getUrl(endpoint);
-  return axios.post(`http://localhost:3100${endpoint}`, data, {
+  return axios.post(getUrl(endpoint), data, {
     headers: { "Content-Type": "application/json" }
   });
 };
