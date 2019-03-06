@@ -1,5 +1,5 @@
-const routing  = require('./routing/index.js')
-const db = require('./db')
+const routing  = require('../routing/index.js')
+const db = require('../db')
 const express = require('express')
 const next = require('next')
 const dev = process.env.NODE_ENV !== 'production'
