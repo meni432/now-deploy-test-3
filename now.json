@@ -4,7 +4,13 @@
     {
       "src": "next.config.js",
       "use": "@now/next"
-    }
+    },
+    { "src": "apiServer.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/routing/(.*)", "dest": "apiServer.js" },
+    { "src": "/db/(.*)", "dest": "apiServer.js" },
+    { "src": "/(.*)", "dest": "$1" }
   ],
   "name": "now-deploy-test"
 }
