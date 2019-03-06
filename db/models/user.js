@@ -5,6 +5,7 @@ const bcrypt = require('bcrypt')                         // bcrypt will encrypt 
 const crypto = require('crypto')                         // built-in encryption node module
 
 const signin = (request, response) => {
+    console.log("Sign in request ", request)
     const userReq = request.body
     let user
     findUserByEmail(userReq)
